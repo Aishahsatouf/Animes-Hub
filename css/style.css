@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body{
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+     top: 0; 
+     bottom: 0; 
+     color: white;
+     margin-top: 0px;
+     margin-left: 0px;
+     margin-right: 0px;
+}
+header h1{
+    height: 100%;
+    top: 0;
+    margin-top: 0px;
+}
+header{
+    text-align: center;
+    position: relative;
+    top: 0;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    height: 80px;
+    background-color: #9d0d0d;
+    width: 100% ;
+    padding-top: 20px;
+
+}
+.form {
+    display: inline-block;
+    margin-top: 25px;
+    margin-right: 50px;
+    margin-left: 5%;
+    float: left;
+    opacity: 0.8;
+    background-color: #5f5757bf;
+    height: 300px;
+    width: 300px;
+    padding: 2%;
+    text-align: center;
+    font-size: larger;
+    box-shadow: 2px 4px white;
+    
+}
+#submit{
+    background-color: #9d0d0d;
+    color: white;
+    width: 100%;
+    height: 50px;
+    font-size: 25px;
+}
+.table {
+    display: inline-block;
+    margin-top: 25px;
+    margin-right: 50px;
+    margin-left: 5%;
+    opacity: 0.8;
+    background-color: #5f5757bf;
+    height: 300px;
+    width: 800px;
+    padding: 2%;
+    text-align: center;
+    font-size: larger;
+    box-shadow: 2px 4px white;
+}
+.table table{
+    width: 100%;
+    height: 100%;
+}
+#renderTable th {
+    background-color: #9d0d0d;
+    border: 2px solid white;
+
+}
+#renderTable td{
+    border: 2px solid white;
+}
+
+#renderTable button{
+    background-color: #9d0d0d;
+    border-radius: 5px;
+}
