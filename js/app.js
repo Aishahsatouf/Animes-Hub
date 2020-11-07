@@ -27,11 +27,11 @@ function handleSubmit(event){
  
 }
 function sendToLs(){
-    var Anime=localStorage.setItem('items',JSON.stringify(Animes.all));
+    var Anime=localStorage.setItem('shows',JSON.stringify(Animes.all));
 }
 function getFromLs(){
-    if(localStorage.getItem('items')){
-        var animes = JSON.parse(localStorage.getItem('items'));
+    if(localStorage.getItem('shows')){
+        var animes = JSON.parse(localStorage.getItem('shows'));
         for(var i=0;i<animes.length;i++){
             new Animes(animes[i].title,animes[i].category,animes[i].season);
         }
@@ -51,8 +51,6 @@ function addHeader(){
 }
  function render(){
      addHeader();
-    // var array=['Anime Title','Category','Rando Season','Remove'];
-    // var table = getElementById('renderTable');
     for (var x =0 ;x<Animes.all.length;x++){
         var row =document.createElement('tr');
         table.appendChild(row);
@@ -82,7 +80,20 @@ function addHeader(){
  var remove = document. getElementById('renderTable');
  remove.addEventListener('click',Remove);
  function Remove (event){
+     event.preventDefault();
+     var index;
   if(event.target.id!=='renderTable'){
-   var tableRow=
+      for (var y=0;y<Animes.all.length;y++){
+            if( event .target.id === Animes.all[y].title ){
+                index=y;
+               Animes.all.splice(index,1);
+               break;
+           }
+           
+           
+       }
+       sendToLs();
+      clear();
+      render();
   }
  }
